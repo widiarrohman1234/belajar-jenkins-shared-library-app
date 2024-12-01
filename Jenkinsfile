@@ -1,6 +1,6 @@
 @Library("belajar-jenkins-shared-library@main") _
 
-import widiarrohman.jenkins.Ouput;
+import widiarrohman.jenkins.Output;
 
 pipeline {
     agent any
@@ -8,7 +8,7 @@ pipeline {
         stage("Hello Groovy"){
             steps{
                 script{
-                    Ouput.hello('Groovy :)')
+                    Output.hello('Groovy :)')
                 }
             }
         }
