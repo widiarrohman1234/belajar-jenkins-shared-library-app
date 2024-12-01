@@ -2,5 +2,5 @@
 
 // mavenPipeline()
 pznPipeline([
-    type: "wrong"
+    type: "maven"
 ])
