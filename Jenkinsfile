@@ -9,7 +9,7 @@ pipeline {
             steps{
                 script{
                     echo 'Stage Maven Build'
-                    echo(maven("clean compile"))
+                    maven(["clean","compile","test"])
                 }
             }
         }
