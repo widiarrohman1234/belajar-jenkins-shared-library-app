@@ -5,6 +5,16 @@ import widiarrohman.jenkins.Output;
 pipeline {
     agent any
     stages{
+        stage("Hello Person"){
+            steps{
+                script{
+                    hello.person([
+                        "firstName":"Widi",
+                        "lastName":"Arrohman"
+                    ])
+                }
+            }
+        }
         stage("Maven Build"){
             steps{
                 script{
